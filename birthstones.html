@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/994/original/Diamond.png?1643546869"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Birthstones: What does your Birthstone say about you?</title>
+    <meta
+      name="description"
+      content="Learn more about the precious stones linked to your birth month."
+    />
+    <style>
+      body {
+        background: linear-gradient(#edd500, white, #edd500);
+        opacity: 0.8;
+        line-height: 1.5;
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        font-size: 40pt;
+        font-weight: bold;
+        color: black;
+        opacity: 0.7;
+        background-color: white;
+        max-width: 10000px;
+        padding: 5px 10px;
+        border-radius: 6px;
+      }
+      .gem {
+        display: block;
+        margin: 0 auto;
+        border: groove;
+        border-radius: 8px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 25pt;
+        font-weight: bold;
+        color: black;
+        opacity: 0.7;
+        margin: 10px auto;
+      }
+      p {
+        text-align: center;
+        background-color: #edd500;
+        font-size: 14pt;
+        color: white;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 15px;
+        border-radius: 6px;
+      }
+      .bold {
+        font-weight: bold;
+        font-size: 15pt;
+        color: black;
+        opacity: 0.7;
+      }
+      strong {
+        color: black;
+        opacity: 0.7;
+      }
+      button {
+        display: inline-block;
+        margin: 10px 5px auto;
+        background-color: white;
+        opacity: 0.7;
+        color: black;
+
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 5px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      div {
+        text-align: center;
+        padding: 0 0;
+      }
+      a:hover {
+        color: #edd500;
+      }
+      h5 {
+        text-align: center;
+        color: black;
+        opacity: 0.7;
+        padding: 5px;
+        background-color: white;
+        border-radius: 4px;
+        max-width: 10000px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <hr />
+    <h1>What's your BIRTHSTONE?</h1>
+    <img
+      class="gem"
+      id="stones"
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/714/original/gemstones.jpg?1643221984"
+      alt="gemstones"
+      width="500"
+    />
+    <h2>Find Out the Meaning Behind Your Birthstone</h2>
+    <p>
+      This tradition of the birthstone goes back to the <em>Book of Exodus</em>,
+      in which the first high priest of the Israelites wore a breastplate with
+      twelve stones, believed to have magical powers, representing the twelve
+      tribes of Israel. It became a tradition for Christians to wear all twelve
+      stones, recalling the breastplate. As time went on, people started
+      rotating through their collection and wearing one stone on its own, based
+      on which one was believed to have heightened powers at that time. This
+      eventually evolved to associating particular gemstones with birth months.
+      <br /><br />
+      Birthstones are a fun, popular and colorful introduction to the world of
+      gemstones. They appeal to audiences around the world regardless of gender,
+      age, nationality or religion. Birthstones carry secrets, attributes and
+      lore that are unique to each gemstone. There are countless myths and
+      legends around the many different powers and attributes that birthstones
+      have. Whether or not you believe these legends, it’s hard to disagree that
+      learning about birthstones can be an educational and entertaining
+      experience.<br /><br /><span class="bold">
+        Discover what makes your birthstone a powerful statement of your finest
+        qualities by clicking on the month you were born in below ⇣
+      </span>
+    </p>
+    <div>
+      <button class="b1">
+        JANUARY <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/764/original/birthstone-january-garnet.png?1643297623"
+          alt="garnet"
+          width="180"
+        />
+      </button>
+      <button class="b2">
+        FEBRUARY <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/765/original/birthstone-february-amethyst.png?1643297637"
+          alt="amethyst"
+          width="180"
+        />
+      </button>
+      <button class="b3">
+        MARCH <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/766/original/birthstone-march-aquamarine-bloodstone.png?1643297653"
+          alt="aquamarine-bloodstone"
+          width="180"
+        />
+      </button>
+      <button class="b4">
+        APRIL <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/767/original/birthstone-april-diamond.png?1643297664"
+          alt="diamond"
+          width="180"
+        />
+      </button>
+      <button class="b5">
+        MAY <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/768/original/birthstone-may-emerald.png?1643297674"
+          alt="emerald"
+          width="180"
+        />
+      </button>
+      <button class="b6">
+        JUNE <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/769/original/birthstone-june-pearl-alexandrite-moonstone.png?1643297685"
+          alt="pearl-alexandrite-moonstone"
+          width="180"
+        />
+      </button>
+      <button class="b7">
+        JULY <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/770/original/birthstone-july-ruby.png?1643297696"
+          alt="ruby"
+          width="180"
+        />
+      </button>
+      <button class="b8">
+        AUGUST <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/771/original/birthstone-august-peridot-spinel.png?1643297714"
+          alt="peridot-spinel"
+          width="180"
+        />
+      </button>
+      <button class="b9">
+        SEPTEMBER <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/772/original/birthstone-september-sapphire.png?1643297737"
+          alt="sapphire"
+          width="180"
+        />
+      </button>
+      <button class="b10">
+        OCTOBER <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/773/original/birthstone-october-opal-tourmaline.png?1643297753"
+          alt="opal-tourmaline"
+          width="180"
+        />
+      </button>
+      <button class="b11">
+        NOVEMBER <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/774/original/birthstone-november-topaz-citrine.png?1643297775"
+          alt="topaz-citrine"
+          width="180"
+        />
+      </button>
+      <button class="b12">
+        DECEMBER <br />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/775/original/birthstone-december-tanzanite-turquoise-zircon.png?1643297802"
+          alt="tanzanite-turquoise-zircon"
+          width="180"
+        />
+      </button>
+    </div>
+    <h5>©2022 All Rights Reserved ✨ YC ART™️</h5>
+    <hr />
+
+    <script>
+      function updateTitle(newTitle) {
+        let title = document.querySelector("h2");
+        title.innerHTML = newTitle;
+      }
+
+      function updateBody(newBody) {
+        let body = document.querySelector("p");
+        body.innerHTML = newBody;
+      }
+
+      function jan() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC1();
+          alert(
+            `January birthstone is Garnet. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on January birthstone 💎`
+          );
+          updateBody(
+            `<strong>GARNET</strong> <br /> Those born in January are lucky to have the beautiful and diverse garnet as their birthstone. Garnets are commonly red but also come in an extraordinary range of beautiful colors, including orange, yellow, purple and vibrant green. There are even garnets that change color from blue to purple in different lighting. Some believe the true value of the garnet birthstone is its power to bring the wearer good health, wealth and happiness. <a href="https://www.gia.edu/birthstones/january-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC1() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/764/original/birthstone-january-garnet.png?1643297623";
+      }
+      let janButton = document.querySelector(".b1");
+      janButton.addEventListener("click", jan);
+
+      function feb() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC2();
+          alert(
+            `February birthstone is Amethyst. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on February birthstone 💎`
+          );
+          updateBody(
+            `<strong>AMETHYST</strong> <br /> If you were born in February, your birthstone is amethyst – the purple variety of quartz that has captivated mankind for millennia. Its lilac to deep purple hues can be cut into many shapes and sizes, and it can be manufactured in a lab as well as mined. If your birthday is in February, then wearing an amethyst can also be a symbol of personal empowerment and inner strength. <a href="https://www.gia.edu/birthstones/february-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC2() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/765/original/birthstone-february-amethyst.png?1643297637";
+      }
+      let febButton = document.querySelector(".b2");
+      febButton.addEventListener("click", feb);
+
+      function mar() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC3();
+          alert(
+            `March birthstones are Aquamarine and Bloodstone. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on March birthstones 💎`
+          );
+          updateBody(
+            `<strong>AQUAMARINE / BLOODSTONE</strong> <br /> These two birthstones are very different when it comes to appearance, but they share a similar reputation for protecting one’s well-being. The aquamarine birthstone evokes the colors of the sea. From deep green-blue to light, slightly greenish blue hues, faceted aquamarines are often free from inclusions and as clear as water, symbolizing purity of spirit and soul. The bloodstone birthstone is typically a dark-green cabochon that contains red spots of iron oxide, the “blood” that brings health and strength to the wearer. <a href="https://www.gia.edu/birthstones/march-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC3() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/766/original/birthstone-march-aquamarine-bloodstone.png?1643297653";
+      }
+      let marButton = document.querySelector(".b3");
+      marButton.addEventListener("click", mar);
+
+      function apr() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC4();
+          alert(
+            `April birthstone is Diamond. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on April birthstone 💎`
+          );
+          updateBody(
+            `<strong>DIAMOND</strong> <br /> Sparkling with an internal fire all its own, diamond is one of the world’s most sought-after and adored gemstones. Those born in April are lucky enough to call this scintillating gem their birthstone, a symbol of clarity and strength. Diamond is so strong, in fact, that its name comes from the Greek word adamas, which means “invincible” or “unbreakable”. The timeless charm of diamond was cherished long before it became the April birthstone, and the places where diamond comes from are as fascinating as the lore that surrounds it. <a href="https://www.gia.edu/birthstones/april-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC4() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/767/original/birthstone-april-diamond.png?1643297664";
+      }
+      let aprButton = document.querySelector(".b4");
+      aprButton.addEventListener("click", apr);
+
+      function may() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC5();
+          alert(`May birthstone is Emerald. Select OK to learn more about it.`);
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on May birthstone 💎`
+          );
+          updateBody(
+            `<strong>EMERALD</strong> <br /> The birthstone for May, has been beloved for millennia, evoking rebirth and renewal. Widely regarded as the definition of green, emerald is the perfect color for spring. Legend has it that emerald has the power to make its wearer more intelligent and quick-witted, and it was once believed to cure diseases like cholera and malaria. <a href="https://www.gia.edu/birthstones/may-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC5() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/768/original/birthstone-may-emerald.png?1643297674";
+      }
+      let mayButton = document.querySelector(".b5");
+      mayButton.addEventListener("click", may);
+
+      function jun() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC6();
+          alert(
+            `June birthstones are Pearl, Alexandrite, and Moonstone. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on June birthstones 💎`
+          );
+          updateBody(
+            `<strong>PEARL / ALEXANDRITE / MOONSTONE</strong> <br /> If you were born in the month of June, you are lucky enough to have three birthstones to call your own. Pearls have long been associated with purity, humility and innocence. Alexandrite is the rare variety of the mineral chrysoberyl that changes color in different lighting. Most prized are those alexandrite birthstones that show a vivid green to bluish green in daylight or fluorescent light, and an intense red to purplish red in incandescent light. Moonstone is often associated with love, passion and fertility; it is believed to bring great luck. <a href="https://www.gia.edu/birthstones/june-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC6() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/769/original/birthstone-june-pearl-alexandrite-moonstone.png?1643297685";
+      }
+      let junButton = document.querySelector(".b6");
+      junButton.addEventListener("click", jun);
+
+      function jul() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC7();
+          alert(`July birthstone is Ruby. Select OK to learn more about it.`);
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on July birthstone 💎`
+          );
+          updateBody(
+            `<strong>RUBY</strong> <br /> It’s one of the most coveted of gems. The name is derived from the Latin word ruber, meaning “red” – the color of love and passion. Few things catch the eye like the ruby birthstone. The finest color of the birthstone for July is a deep red with a hint of purple, called “pigeon’s blood” in the trade. A variety of the mineral corundum, ruby gets its color from trace amounts of the element chromium. The more chromium, the stronger the red. <a href="https://www.gia.edu/birthstones/july-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC7() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/770/original/birthstone-july-ruby.png?1643297696";
+      }
+      let julButton = document.querySelector(".b7");
+      julButton.addEventListener("click", jul);
+
+      function aug() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC8();
+          alert(
+            `August birthstones are Peridot and Spinel. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on August birthstones 💎`
+          );
+          updateBody(
+            `<strong>PERIDOT / SPINEL</strong> <br /> The peridot is formed under extreme conditions, as it can be found in the hardened lava that carried it from deep within Earth’s mantle as well as in meteorites that traveled from outer space. It has also been used for centuries as a protective talisman, shielding the owner from evil spirits and “terrors of the night”. And the name “spinel” comes from the Latin word spina, which means thorn, in reference to the shape of spinel crystals. This birthstone comes in a wealth of colors: intense red, vibrant pink, orange, purple, violet, blue and bluish green. <a href="https://www.gia.edu/birthstones/august-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC8() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/771/original/birthstone-august-peridot-spinel.png?1643297714";
+      }
+      let augButton = document.querySelector(".b8");
+      augButton.addEventListener("click", aug);
+
+      function sep() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC9();
+          alert(
+            `September birthstone is Sapphire. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on September birthstone 💎`
+          );
+          updateBody(
+            `<strong>SAPPHIRE</strong> <br /> The September birthstone is sapphire – a gem that’s been cherished for thousands of years. Although the term sapphire usually refers to the blue variety of corundum (ruby is the red variety), this birthstone comes in a rainbow of other colors. Sapphires have been long associated with royalty and romance and are also said to symbolize fidelity and the soul. “Sapphire” comes from the Greek word sappheiros and blue sapphire is one of the most popular colored stones. <a href="https://www.gia.edu/birthstones/september-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC9() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/772/original/birthstone-september-sapphire.png?1643297737";
+      }
+      let sepButton = document.querySelector(".b9");
+      sepButton.addEventListener("click", sep);
+
+      function oct() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC10();
+          alert(
+            `October birthstones are Opal and Tourmaline. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on October birthstones 💎`
+          );
+          updateBody(
+            `<strong>OPAL / TOURMALINE</strong> <br /> Both birthstones have endless color combinations. Most opals are valued for their shifting colors in rainbow hues. Europeans long maintained opal to be a symbol of purity, hope and truth. Tourmaline is the newer October birthstone. Different colors of tourmaline are thought to have their own healing properties. Black tourmaline is believed to protect the wearer and give a sense of self-confidence. Pink tourmaline embodies love and is associated with compassion and gentleness. Green tourmaline promotes courage, strength and stamina. <a href="https://www.gia.edu/birthstones/october-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC10() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/773/original/birthstone-october-opal-tourmaline.png?1643297753";
+      }
+      let octButton = document.querySelector(".b10");
+      octButton.addEventListener("click", oct);
+
+      function nov() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC11();
+          alert(
+            `November birthstones are Topaz and Citrine. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on November birthstones 💎`
+          );
+          updateBody(
+            `<strong>TOPAZ / CITRINE</strong> <br /> The variety of topaz hues includes colorless, light blue, yellow, orange, pink, violet, brown and, very rarely, red. The vast majority of blue topaz seen today is the permanent result of treating colorless topaz with irradiation and heating. Citrine is prized for its charming yellow and orange hues, which has been used in jewelry for thousands of years. Both November birthstones are known to have calming energies while bringing fortune and warmth to the wearer. <a href="https://www.gia.edu/birthstones/november-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC11() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/774/original/birthstone-november-topaz-citrine.png?1643297775";
+      }
+      let novButton = document.querySelector(".b11");
+      novButton.addEventListener("click", nov);
+
+      function dec() {
+        let name = prompt("What's your name?");
+        if (name === "") {
+          alert(`😬 Oh no, you forgot to enter your name, please try again.`);
+          return false;
+        } else {
+          let greeting = name.toUpperCase();
+          changeSRC12();
+          alert(
+            `December birthstones are Turquoise, Zircon, and Tanzanite. Select OK to learn more about it.`
+          );
+          updateTitle(
+            `💎 Hi ${greeting}, here are some information on December birthstones 💎`
+          );
+          updateBody(
+            `<strong>TURQUOISE / ZIRCON / TANZANITE</strong> <br/> In European tradition, the gift of a turquoise ring means “forget me not.” It is also believed to grant health, good fortune and protection from evil. Zircon on the other hand was thought to lull one into a deep sleep and scare off evil spirits. The tanzanite birthstone is often described as “velvety,” mostly because of its deep and saturated color, which ranges from a pure rich blue to violet, with the blue considered most valuable. <a href="https://www.gia.edu/birthstones/december-birthstones" target="blank">Read more</a> or choose a different month below ⇣`
+          );
+        }
+      }
+      function changeSRC12() {
+        document.getElementById("stones").src =
+          "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/775/original/birthstone-december-tanzanite-turquoise-zircon.png?1643297802";
+      }
+      let decButton = document.querySelector(".b12");
+      decButton.addEventListener("click", dec);
+    </script>
+  </body>
+</html>
